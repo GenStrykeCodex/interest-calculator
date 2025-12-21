@@ -1,4 +1,4 @@
-# CLI Interest Calculator – v1.0
+# CLI Interest Calculator – v1.1 (Updated)
 
 A menu-driven **Command Line Interest Calculator** built using Python.  
 This application calculates **Simple Interest** and **Compound Interest** with proper input validation and unit handling.
@@ -18,6 +18,7 @@ This application calculates **Simple Interest** and **Compound Interest** with p
 - Validates all numeric inputs
 - Displays results rounded to **2 decimal places**
 - Clean, user-friendly CLI menu system
+- Compare Simple Interest vs Compound Interest
 
 ---
 
@@ -38,7 +39,7 @@ This application calculates **Simple Interest** and **Compound Interest** with p
 
 1. Simple Interest Calculator
 2. Compound Interest Calculator
-3. Compare SI and CI *(planned for v1.1)*
+3. Compare SI and CI *(added in v1.1)*
 4. Exit the Program
 
 ### Inputs Required
@@ -61,9 +62,8 @@ This application calculates **Simple Interest** and **Compound Interest** with p
 
 ---
 
-## Future Improvements (v1.1)
+## Future Improvements
 
-* Compare Simple Interest vs Compound Interest
 * Save calculation history to file
 * GUI version using Tkinter
 
@@ -72,6 +72,7 @@ This application calculates **Simple Interest** and **Compound Interest** with p
 ## Version
 
 First Release: **v1.0** on **19 December 2025**
+Update: **v1.1** on **21 December 2025**
 
 ---
 

@@ -1,10 +1,10 @@
-# Start building CLI Interest Calculator version 1.0
+# Start building CLI Interest Calculator version 1.1
 
 # importing module to get details of interest
 from interest_details import *
 
 # greeting message
-print("\nWelcome to Interest Calculator v1.0")
+print("\nWelcome to Interest Calculator v1.1")
 
 # calculating simple interest
 def calculate_SI(p,r,t):
@@ -19,27 +19,30 @@ def calculate_SI(p,r,t):
 # simple interest calculator menu
 def simple_interest_menu():
 
-    print("\n|------- SIMPLE INTEREST -------|")
-    print("\n1. Start Calculating.")
-    print("2. Return to Main Menu.")
-
     while True:
-        choice_2 = input("\nChoose an option (1-2): ")
-        
-        if choice_2 == "1":
+        print("\n|------- SIMPLE INTEREST -------|")
+        print("\n1. Start Calculating.")
+        print("2. Return to Main Menu.")
 
-            p,r,t = get_details("SI")
-            calculate_SI(p,r,t)
+        while True:
+            choice_2 = input("\nChoose an option (1-2): ")
+            
+            if choice_2 == "1":
 
-            simple_interest_menu()
-        
-        elif choice_2 == "2":
+                p,r,t = get_details("SI")
+                calculate_SI(p,r,t)
 
-            print("Returning to the main menu")
-            return
+                input("\nPress Enter to continue...")
+                break
+            
+            elif choice_2 == "2":
 
-        else:
-            print("Please enter a valid choice.")
+                print("Returning to the main menu")
+                main_menu()
+                return
+
+            else:
+                print("Please enter a valid choice.")
 
 # calculating compound interest
 def calculate_CI(p,r,t,n):
@@ -53,27 +56,63 @@ def calculate_CI(p,r,t,n):
 # compound interest calculator menu
 def compound_interest_menu():
 
-    print("\n|------- COMPOUND INTEREST -------|")
-    print("\n1. Start Calculating.")
-    print("2. Return to Main Menu.")
-
     while True:
-        choice_3 = input("\nChoose an option (1-2): ")
-        
-        if choice_3 == "1":
+        print("\n|------- COMPOUND INTEREST -------|")
+        print("\n1. Start Calculating.")
+        print("2. Return to Main Menu.")
 
-            p,r,t,n = get_details("CI")
-            calculate_CI(p,r,t,n)
+        while True:
+            choice_3 = input("\nChoose an option (1-2): ")
+            
+            if choice_3 == "1":
 
-            compound_interest_menu()
-        
-        elif choice_3 == "2":
+                p,r,t,n = get_details("CI")
+                calculate_CI(p,r,t,n)
 
-            print("Returning to the main menu")
-            return
+                input("\nPress Enter to continue...")
+                break
+            
+            elif choice_3 == "2":
 
-        else:
-            print("Please enter a valid choice.")
+                print("Returning to the main menu")
+                main_menu()
+                return
+
+            else:
+                print("Please enter a valid choice.")
+
+# compare SI and CI
+def compare_SI_CI():
+    
+    while True:
+
+        print("\n|------- COMPARE INTERESTS -------|")
+        print("\n1. Start Calculating.")
+        print("2. Return to Main Menu.")
+
+        while True:
+            choice_4 = input("\nChoose an option (1-2): ")
+            
+            if choice_4 == "1":
+
+                p,r,t,n = get_details("CI")
+
+                print("\n[-------- SIMPLE INTEREST --------]")
+                calculate_SI(p,r,t)
+                print("\n[------- COMPOUND INTEREST -------]")
+                calculate_CI(p,r,t,n)
+
+                input("\nPress Enter to continue...")
+                break
+            
+            elif choice_4 == "2":
+
+                print("Returning to the main menu")
+                main_menu()
+                return
+
+            else:
+                print("Please enter a valid choice.")
 
 # home menu
 def main_menu():
@@ -104,7 +143,7 @@ def main():
 
         elif choice_1 == "3":
             # opens compare interests menu
-            print("This feature is under-development. Stay tuned for v1.1")
+            compare_SI_CI()
 
         elif choice_1 == "4":
             # exists the application

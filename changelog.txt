@@ -1,0 +1,29 @@
+Interest Calculator CLI v1.1 (21 December 2025):
+
+New Features Added
+    - Fixed menu navigation issues caused by nested function calls
+    - Improved control flow using return-based menu handling
+    - Added interest comparison feature (SI vs CI)
+    - Improved overall user experience
+
+Features Coming Soon
+    - Save calculation history
+
+-----------------------------------------------------------------------
+
+Interest Calculator CLI v1.0 (19 December 2025):
+
+Features
+    - Calculate Simple Interest (SI)
+    - Calculate Compound Interest (CI)
+    - Supports multiple compounding frequencies:
+        - Annually
+        - Half-Yearly
+        - Quarterly
+        - Monthly
+    - Time can be entered in years or months
+    - Validates all numeric inputs
+    - Displays results rounded to 2 decimal places
+    - Clean, user-friendly CLI menu system
+
+-----------------------------------------------------------------------
